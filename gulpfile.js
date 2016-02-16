@@ -101,3 +101,7 @@ gulp.task('serve', function() {
   gulp.watch(['bower.json'], ['bowerBuild']);
 
 });
+
+gulp.task('bowerBuild', ['bower'], function(){
+  browserSync.reload();
+});
